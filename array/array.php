@@ -192,11 +192,39 @@
         'hobbies' => ['Sport', 'Wild', 'Dog']
     );
 
+    $me = array(
+        'Lastname' => 'Mertens',
+        'Firstname' => 'Jeremy',
+        'age' => 31,
+        'city' => 'Seneffe',
+        'favorite season' => 'Winter',
+        'Soccer ?' => TRUE,
+        'favorite films' => ['Dikkenek', 'Peaky', 'No country', 'Mystic River'],
+        'hobbies' => ['Wild', 'Dog','Sport', 'Garden']
+    );
+
     echo '<pre>';
     print_r($soulmate);
     echo '</pre>';
-    
+
+    $possible_hobbies_via_intersection = array_intersect($soulmate,$me);
+    $possible_hobbies_via_merge = array_merge($soulmate,$me);
+
+    echo '<pre>';
+    print_r($possible_hobbies_via_intersection);
+    print_r($possible_hobbies_via_merge);
+    echo '</pre>';
 ?></p>
+
+
+<!--=================================================-->
+
+<h2>More exercices</h2>
+
+<p><?php
+
+?></p>
+
 
 </body>
 </html>
